@@ -21,7 +21,7 @@ public class ElonsToyCar {
     }
 
     public String batteryDisplay() {
-        throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.batteryDisplay()  method");
+        return String.format("Battery at %d%%", this.currentBatteryPercentage);
     }
 
     public void drive() {
