@@ -1,6 +1,8 @@
 public class ElonsToyCar {
 
     private final int BATTERY_PERCENTAGE = 100;
+    private final int DISTANCE_COVERED_IN_ONE_GO = 20;
+    private final int BATTERY_PERCENTAGE_DRAINED_IN_ONE_GO = 1;
 
     public static ElonsToyCar buy() {
         throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.buy()  method");
