@@ -21,10 +21,17 @@ public class ElonsToyCar {
     }
 
     public String batteryDisplay() {
+        if (this.currentBatteryPercentage == 0) {
+            return "Battery empty";
+        }
         return String.format("Battery at %d%%", this.currentBatteryPercentage);
     }
 
     public void drive() {
-        throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.drive()  method");
+        if (this.currentBatteryPercentage == 0) {
+            return;
+        }
+        this.totalDistanceDriven += DISTANCE_COVERED_IN_ONE_GO;
+        this.currentBatteryPercentage -= BATTERY_PERCENTAGE_DRAINED_IN_ONE_GO;
     }
 }
