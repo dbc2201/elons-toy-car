@@ -1,4 +1,7 @@
 public class ElonsToyCar {
+
+    private final int BATTERY_PERCENTAGE = 100;
+
     public static ElonsToyCar buy() {
         throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.buy()  method");
     }
