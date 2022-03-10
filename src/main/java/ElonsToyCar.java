@@ -7,6 +7,11 @@ public class ElonsToyCar {
     private int currentBatteryPercentage;
     private int totalDistanceDriven;
 
+    public ElonsToyCar() {
+        this.currentBatteryPercentage = INITIAL_BATTERY_PERCENTAGE;
+        this.totalDistanceDriven = 0;
+    }
+
     public static ElonsToyCar buy() {
         throw new UnsupportedOperationException("Please implement the (static) RemoteControlCar.buy()  method");
     }
